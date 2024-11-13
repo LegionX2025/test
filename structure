@@ -1,0 +1,20 @@
+sec_threat_keyword_hunter/
+├── app/
+│   ├── admin_dashboard.py         # Admin dashboard for managing keywords and sources
+│   ├── clearweb_crawler.py        # ClearWeb Crawler for regular websites
+│   ├── darknet_crawler.py         # Darknet Crawler for .onion sites
+│   ├── data_extractor.py          # Information extraction functions
+│   ├── user_dashboard.py          # User dashboard for managing keywords and viewing results
+│   ├── models.py                  # Database models for keywords, logs, and users
+│   ├── auth.py                    # User authentication (signup/login)
+│   ├── utils.py                   # Utility functions
+│   ├── main.py                    # Main app script
+│   └── templates/                 # HTML templates
+│       ├── landing.html           # Landing page
+│       ├── admin_dashboard.html   # Admin dashboard interface
+│       ├── user_dashboard.html    # User dashboard interface
+│       ├── signup.html            # Signup page
+│       ├── login.html             # Login page
+│       └── log.html               # Log view page
+├── requirements.txt               # Dependencies
+└── README.md

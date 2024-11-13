@@ -1,0 +1,24 @@
+name: sec-hunter
+region: us-east-1
+yamlVersion: 2
+backend:
+  path: ./
+  language:
+    name: python
+    packageManager: pip
+  functions:
+    - name: flask-function
+      path: ./
+      handler: app
+      entry: app/main.py
+      type: httpServer
+  scripts:
+    # Install dependencies before running the application
+    deploy:
+      - pip install -r requirements.txt
+      - python app/main.py
+    # Optional build or start scripts if needed
+    build:
+      - python app/main.py
+    start:
+      - flask run
